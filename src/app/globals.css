@@ -29,7 +29,7 @@ body {
 
 ::selection {
   color: #050608;
-  background: #bfefff;
+  background: #eecd78;
 }
 
 @layer components {
@@ -65,10 +65,10 @@ body {
 
   .hero-stage {
     background:
-      radial-gradient(circle at 50% 44%, rgba(191, 239, 255, 0.13), transparent 28%),
-      radial-gradient(circle at 78% 24%, rgba(103, 212, 238, 0.11), transparent 28%),
+      radial-gradient(circle at 50% 44%, rgba(238, 205, 120, 0.15), transparent 28%),
+      radial-gradient(circle at 78% 24%, rgba(43, 130, 86, 0.16), transparent 28%),
       radial-gradient(circle at 18% 72%, rgba(255, 255, 255, 0.06), transparent 24%),
-      linear-gradient(180deg, #080c11 0%, #050608 54%, #030405 100%);
+      linear-gradient(180deg, #08120d 0%, #050806 54%, #030403 100%);
   }
 
   .hero-grid-field {
@@ -77,8 +77,8 @@ body {
     inset: 0;
     contain: paint;
     background-image:
-      linear-gradient(rgba(191, 239, 255, 0.09) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(191, 239, 255, 0.07) 1px, transparent 1px);
+      linear-gradient(rgba(238, 205, 120, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(95, 170, 112, 0.08) 1px, transparent 1px);
     background-size: 84px 84px;
     mask-image: radial-gradient(ellipse at 50% 44%, black 0%, transparent 68%);
     transform: translate3d(0, 0, 0);
@@ -95,7 +95,7 @@ body {
   .hero-measure-field span {
     position: absolute;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(191, 239, 255, 0.32), transparent);
+    background: linear-gradient(90deg, transparent, rgba(238, 205, 120, 0.36), transparent);
     opacity: 0.42;
     transform-origin: center;
   }
@@ -148,26 +148,26 @@ body {
 
   .hero-orbital-core__aura {
     background:
-      radial-gradient(circle at 50% 48%, rgba(191, 239, 255, 0.2), transparent 42%),
+      radial-gradient(circle at 50% 48%, rgba(238, 205, 120, 0.22), transparent 42%),
       radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.08), transparent 66%);
     filter: blur(6px);
   }
 
   .hero-orbital-core__body {
     background:
-      radial-gradient(circle at 38% 28%, rgba(255, 255, 255, 0.92), rgba(191, 239, 255, 0.48) 16%, rgba(112, 132, 142, 0.58) 46%, rgba(10, 15, 20, 0.2) 74%),
+      radial-gradient(circle at 38% 28%, rgba(255, 255, 255, 0.92), rgba(238, 205, 120, 0.5) 16%, rgba(104, 130, 94, 0.58) 46%, rgba(10, 15, 20, 0.2) 74%),
       linear-gradient(145deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.02));
     box-shadow:
       inset -38px -52px 120px rgba(0, 0, 0, 0.42),
       inset 22px 24px 80px rgba(255, 255, 255, 0.12),
-      0 48px 120px rgba(103, 212, 238, 0.15);
+      0 48px 120px rgba(238, 205, 120, 0.15);
   }
 
   .hero-orbital-core__blade {
     height: 2px;
     border-radius: 999px;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.42), transparent);
-    box-shadow: 0 0 22px rgba(191, 239, 255, 0.18);
+    box-shadow: 0 0 22px rgba(238, 205, 120, 0.18);
     opacity: 0.72;
   }
 
@@ -180,7 +180,7 @@ body {
   }
 
   .hero-orbital-core__ring--inner {
-    border-color: rgba(191, 239, 255, 0.32);
+    border-color: rgba(238, 205, 120, 0.34);
     transform: rotateX(64deg) rotateZ(22deg);
   }
 
@@ -188,9 +188,9 @@ body {
     width: 9px;
     height: 9px;
     border-radius: 999px;
-    background: #bfefff;
+    background: #eecd78;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 36px rgba(191, 239, 255, 0.95);
+    box-shadow: 0 0 36px rgba(238, 205, 120, 0.95);
   }
 
   .final-stage {
@@ -201,8 +201,9 @@ body {
     overflow: hidden;
     padding: clamp(96px, 13vw, 180px) var(--page-pad);
     background:
-      radial-gradient(circle at 50% 46%, rgba(191, 239, 255, 0.12), transparent 30%),
-      linear-gradient(180deg, #050608 0%, #020304 100%);
+      radial-gradient(circle at 50% 46%, rgba(238, 205, 120, 0.14), transparent 30%),
+      radial-gradient(circle at 26% 74%, rgba(43, 130, 86, 0.12), transparent 26%),
+      linear-gradient(180deg, #050806 0%, #020302 100%);
     color: #fff;
     text-align: center;
   }

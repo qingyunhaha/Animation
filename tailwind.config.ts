@@ -12,8 +12,8 @@ const config: Config = {
         ink: '#050608',
         graphite: '#111820',
         paper: '#f4f7f8',
-        ice: '#bfefff',
-        cyanline: '#67d4ee'
+        ice: '#f1d68a',
+        cyanline: '#eecd78'
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui']

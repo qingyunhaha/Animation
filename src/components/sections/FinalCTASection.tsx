@@ -30,7 +30,7 @@ export default function FinalCTASection() {
           viewport={viewportOnce}
           transition={transition(motionDuration.base)}
         >
-          Signal complete
+          Final whistle
         </motion.p>
         <motion.h2
           className="final-stage__title"
@@ -39,10 +39,10 @@ export default function FinalCTASection() {
           viewport={viewportOnce}
           transition={transition(motionDuration.slow, motionDelay.xs, motionEase.standard)}
         >
-          Build the kind of website people slow down to feel.
+          The world does not just watch. It gathers.
         </motion.h2>
         <MagneticButton href="#top" variant="light" className="final-stage__button" ariaLabel="Restart the page sequence from the top">
-          Restart the sequence
+          Replay the journey
         </MagneticButton>
       </div>
     </section>

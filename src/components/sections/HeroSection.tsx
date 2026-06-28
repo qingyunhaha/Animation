@@ -41,12 +41,12 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={transition(motionDuration.slow, motionDelay.md, motionEase.standard)}
             >
-              NOIRFRAME / MOTION SYSTEM
+              WORLD CUP 2026 / NORTH AMERICA
             </motion.p>
             <h1 className="hero-title mx-auto mt-5 max-w-6xl text-[clamp(2.55rem,8.2vw,8.8rem)] font-bold leading-[1.02] text-white md:leading-[0.96]">
               <SplitHeadline
-                text="Cinematic motion for precise digital worlds."
-                lines={['Cinematic motion', 'for precise digital', 'worlds.']}
+                text="The world arrives for one beautiful game."
+                lines={['The world arrives', 'for one beautiful', 'game.']}
               />
             </h1>
             <motion.p
@@ -55,7 +55,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
               transition={transition(motionDuration.slow, motionDelay.xl, motionEase.standard)}
             >
-              A restrained scroll narrative where depth, rhythm, and interface detail move with intention.
+              A cinematic campaign for the expanded tournament: 48 teams, three host nations, and one summer built around the ball.
             </motion.p>
             <motion.div
               className="mt-7 flex flex-col items-center justify-center gap-4 text-sm text-white/45 sm:flex-row md:mt-9"
@@ -64,14 +64,14 @@ export default function HeroSection() {
               transition={transition(motionDuration.slow, 1.24, motionEase.standard)}
             >
               <MagneticButton href="#showcase" className="hero-cta" ariaLabel="Explore the showcase section">
-                Explore the system
+                Enter the tournament
               </MagneticButton>
-              <span className="hidden sm:inline">A measured scroll sequence</span>
+              <span className="hidden sm:inline">Canada / Mexico / United States</span>
             </motion.div>
           </motion.div>
           <div className="absolute bottom-8 left-[var(--page-pad)] right-[var(--page-pad)] z-20 hidden justify-between text-[0.72rem] uppercase text-white/40 md:flex">
-            <span>Live composition</span>
-            <span>Framer Motion / GSAP / Lenis</span>
+            <span>Matchday atmosphere</span>
+            <span>48 teams / 104 matches</span>
           </div>
         </>
       )}

@@ -1,91 +1,91 @@
-import { CircleGauge, Layers3, MousePointer2, ScanLine, ShieldCheck, Sparkles } from 'lucide-react';
+import { CalendarDays, CircleGauge, Globe2, MapPinned, ShieldCheck, Sparkles } from 'lucide-react';
 
 export const navItems = [
-  { label: 'Concept', href: '#concept' },
-  { label: 'System', href: '#system' },
-  { label: 'Showcase', href: '#showcase' },
-  { label: 'Signal', href: '#signal' }
+  { label: 'Pulse', href: '#concept' },
+  { label: 'Tournament', href: '#system' },
+  { label: 'Cities', href: '#showcase' },
+  { label: 'Finale', href: '#signal' }
 ];
 
 export const principles = [
   {
     id: '01',
-    title: 'Precision',
-    copy: 'Every transition is measured around hierarchy, focus, and pace.',
-    metric: '0.38s'
+    title: '48 Teams',
+    copy: 'A larger field turns the group stage into a wider global opening act.',
+    metric: 'global'
   },
   {
     id: '02',
-    title: 'Depth',
-    copy: 'Layered movement creates spatial tension without ornamental noise.',
-    metric: '4 layers'
+    title: '104 Matches',
+    copy: 'Every fixture becomes part of a long-form summer rhythm, from first whistle to final.',
+    metric: '104'
   },
   {
     id: '03',
-    title: 'Flow',
-    copy: 'Scroll becomes a camera move, not a stack of disconnected sections.',
-    metric: 'scrub'
+    title: 'Three Nations',
+    copy: 'Canada, Mexico, and the United States carry one tournament across a continent.',
+    metric: 'CAN / MEX / USA'
   },
   {
     id: '04',
-    title: 'Silence',
-    copy: 'Motion steps back when clarity needs the foreground.',
-    metric: 'reduced'
+    title: 'One Trophy',
+    copy: 'The noise resolves into a single object: gold, pressure, memory, and the final touch.',
+    metric: 'final'
   }
 ];
 
 export const showcases = [
   {
-    kicker: 'Launch System',
-    title: 'A product reveal paced like a studio film.',
-    copy: 'Pinning, scale, and restrained light movement turn one message into a complete opening sequence.'
+    kicker: 'Opening Night',
+    title: 'The first whistle becomes a cinematic ignition.',
+    copy: 'Dark stadium air, broadcast light, and a single ball establish the scale before the crowd takes over.'
   },
   {
-    kicker: 'Interface Depth',
-    title: 'Quiet controls with responsive physicality.',
-    copy: 'Cards, buttons, and panels react with subtle material changes instead of loud UI tricks.'
+    kicker: 'Host Cities',
+    title: 'A continent-wide stage, connected by matchday energy.',
+    copy: 'Each card carries the feeling of travel, arrival, and the precise geometry of the pitch.'
   },
   {
-    kicker: 'Scroll Narrative',
-    title: 'A linear story users can control.',
-    copy: 'Each viewport carries one idea, and each transition prepares the next one.'
+    kicker: 'Knockout Pressure',
+    title: 'The pace narrows as the stakes become heavier.',
+    copy: 'The design shifts from open space to focused tension, mirroring the tournament path.'
   },
   {
-    kicker: 'Performance Pass',
-    title: 'High-fidelity motion that still feels instant.',
-    copy: 'Transforms stay cheap, heavy scenes stay isolated, and small screens receive a cleaner rhythm.'
+    kicker: 'Final Signal',
+    title: 'All routes collapse into one golden frame.',
+    copy: 'The closing visual brings the ball, trophy light, and crowd pulse back into a single poster-like moment.'
   }
 ];
 
 export const detailItems = [
   {
-    title: 'Rendering',
-    copy: 'Visual layers use transform and opacity first, with expensive effects isolated from layout flow.',
+    title: 'Host Nations',
+    copy: 'Canada, Mexico, and the United States shape the tournament as a North American summer event.',
+    icon: MapPinned
+  },
+  {
+    title: 'Tournament Scale',
+    copy: 'The 48-team format gives the campaign a broader opening rhythm and more national storylines.',
     icon: CircleGauge
   },
   {
-    title: 'Timing',
-    copy: 'Reusable timelines keep page entrances, scrubbed sequences, and hover states rhythmically aligned.',
-    icon: Layers3
+    title: 'Match Calendar',
+    copy: 'The experience is paced around a long tournament arc, with quiet build, matchday surge, and final release.',
+    icon: CalendarDays
   },
   {
-    title: 'Interaction',
-    copy: 'Pointer parallax and magnetic motion stay below the threshold where they distract.',
-    icon: MousePointer2
+    title: 'Global Audience',
+    copy: 'Visual language stays legible across cultures: field lines, trophy light, flags, and broadcast rhythm.',
+    icon: Globe2
   },
   {
-    title: 'Accessibility',
-    copy: 'Reduced-motion users receive a stable editorial version with the same content hierarchy.',
+    title: 'Access',
+    copy: 'Reduced-motion visitors receive the same story in a calmer editorial sequence.',
     icon: ShieldCheck
   },
   {
-    title: 'Layout',
-    copy: 'Responsive sections use bounded type scales and fixed-format visual areas to prevent overlap.',
-    icon: ScanLine
-  },
-  {
-    title: 'Finish',
-    copy: 'Subtle lines, material shifts, and calibrated contrast carry the premium feel.',
+    title: 'Atmosphere',
+    copy: 'Fine grain, restrained gold, and pitch geometry keep the campaign premium rather than noisy.',
     icon: Sparkles
   }
 ];

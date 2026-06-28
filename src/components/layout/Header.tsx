@@ -16,10 +16,10 @@ export default function Header() {
     >
       <a
         href="#top"
-        aria-label="NOIRFRAME home"
+        aria-label="World Cup campaign home"
         className="grid h-10 w-10 place-items-center rounded-full border border-white/35 text-xs font-bold"
       >
-        NF
+        WC
       </a>
       <nav className="hidden justify-center gap-8 text-[0.72rem] font-medium uppercase text-white/65 md:flex lg:gap-12">
         {navItems.map((item) => (
@@ -28,8 +28,8 @@ export default function Header() {
           </a>
         ))}
       </nav>
-      <a className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-white/80 hover:text-white" href="#signal" aria-label="Go to final call to action">
-        Start
+      <a className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-white/80 hover:text-white" href="#signal" aria-label="Go to finale section">
+        Finale
         <ArrowUpRight size={16} strokeWidth={1.8} />
       </a>
     </motion.header>

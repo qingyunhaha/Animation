@@ -10,9 +10,9 @@ export default function MotionSystemSection() {
       <div className="grain-layer" />
       <div className="section-inner relative z-10">
         <div className="protected-copy protected-copy--dark mb-16 grid gap-8 md:mb-24 md:grid-cols-[minmax(160px,0.34fr)_1fr]">
-          <SectionLabel index="02" label="Motion System" dark />
+          <SectionLabel index="02" label="Tournament" dark />
           <Reveal as="h2" className="max-w-5xl text-[clamp(2.1rem,5.4vw,6rem)] font-semibold leading-[0.98]">
-            The system is quiet by default. It only moves when meaning changes.
+            Bigger scale, sharper stakes, and one continent carrying the sound.
           </Reveal>
         </div>
         <div className="border-t border-white/12">

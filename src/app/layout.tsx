@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'NOIRFRAME Motion System',
-  description: 'A cinematic motion website built with Next.js, TypeScript, Tailwind, Framer Motion, GSAP, and Lenis.'
+  title: 'World Cup 2026 Campaign',
+  description: 'A cinematic World Cup 2026 promotional website concept for the expanded tournament across Canada, Mexico, and the United States.'
 };
 
 export default function RootLayout({
