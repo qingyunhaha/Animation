@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import MagneticButton from '@/components/motion/MagneticButton';
 import SplitHeadline from '@/components/motion/SplitHeadline';
@@ -7,6 +8,7 @@ import OrbitalCore from '@/components/visuals/OrbitalCore';
 import ParallaxSection from '@/components/motion/ParallaxSection';
 import usePrefersReducedMotion from '@/hooks/usePrefersReducedMotion';
 import { motionDelay, motionDuration, motionEase, transition } from '@/lib/motionSystem';
+import stadiumImage from '../../../public/images/world-cup/stadium-night.webp';
 
 export default function HeroSection() {
   const reduceMotion = usePrefersReducedMotion();
@@ -18,6 +20,16 @@ export default function HeroSection() {
     >
       {({ copyY, copyOpacity, visualY, visualOpacity, gridOpacity }) => (
         <>
+          <motion.div
+            className="hero-image-field"
+            style={{ y: visualY, opacity: gridOpacity }}
+            initial={reduceMotion ? false : { scale: 1.06, opacity: 0 }}
+            animate={reduceMotion ? { opacity: 0.26 } : { scale: 1, opacity: 0.3 }}
+            transition={transition(motionDuration.hero, 0, motionEase.standard)}
+            aria-hidden="true"
+          >
+            <Image src={stadiumImage} alt="" fill priority sizes="100vw" className="object-cover" />
+          </motion.div>
           <motion.div className="hero-grid-field" style={{ opacity: gridOpacity }} aria-hidden="true" />
           <div className="hero-measure-field" aria-hidden="true">
             <span />

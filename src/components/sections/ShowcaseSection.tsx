@@ -1,6 +1,12 @@
+import Image from 'next/image';
 import Reveal from '@/components/motion/Reveal';
 import SectionLabel from '@/components/ui/SectionLabel';
 import { showcases } from '@/data/siteContent';
+import fanArrivalImage from '../../../public/images/world-cup/fan-arrival.webp';
+import finalGoldImage from '../../../public/images/world-cup/final-gold.webp';
+import stadiumImage from '../../../public/images/world-cup/stadium-night.webp';
+
+const showcaseImages = [stadiumImage, fanArrivalImage, stadiumImage, finalGoldImage];
 
 export default function ShowcaseSection() {
   return (
@@ -21,11 +27,17 @@ export default function ShowcaseSection() {
               key={item.title}
             >
               <div className="relative min-h-[260px] overflow-hidden bg-[linear-gradient(135deg,#07140f,#143a28_46%,#f1ead3_100%)] md:min-h-full">
-                <span className="absolute left-5 top-5 text-xs uppercase text-white/52">{String(index + 1).padStart(2, '0')}</span>
-                <div className="absolute inset-x-[12%] top-1/2 h-px bg-white/70 shadow-[0_0_24px_rgba(238,205,120,0.26)]" />
-                <div className="absolute bottom-[18%] left-[12%] right-[12%] h-[38%] rounded-[8px] border border-white/26 opacity-70" />
-                <div className="absolute right-[14%] top-[22%] aspect-square w-[42%] rounded-full border border-white/38 transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute right-[24%] top-[34%] aspect-square w-[20%] rounded-full border border-amber-950/18" />
+                <Image
+                  src={showcaseImages[index]}
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 46vw, 100vw"
+                  className="object-cover opacity-[0.88] transition-transform duration-[1200ms] ease-smooth group-hover:scale-[1.035]"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,4,3,0.12),rgba(2,4,3,0.64))]" />
+                <span className="absolute left-5 top-5 text-xs uppercase text-white/68">{String(index + 1).padStart(2, '0')}</span>
+                <div className="absolute inset-x-[12%] bottom-[18%] h-px bg-white/70 shadow-[0_0_24px_rgba(238,205,120,0.26)]" />
+                <div className="absolute bottom-[12%] left-[12%] right-[12%] h-[34%] rounded-[8px] border border-white/20 opacity-60" />
               </div>
               <div className="grid content-center p-6 md:p-10 lg:p-14">
                 <p className="light-eyebrow">{item.kicker}</p>

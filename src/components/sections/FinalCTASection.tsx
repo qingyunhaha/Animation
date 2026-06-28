@@ -1,16 +1,19 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import MagneticButton from '@/components/motion/MagneticButton';
 import OrbitalCore from '@/components/visuals/OrbitalCore';
 import usePrefersReducedMotion from '@/hooks/usePrefersReducedMotion';
 import { motionDelay, motionDuration, motionEase, transition, viewportOnce } from '@/lib/motionSystem';
+import finalGoldImage from '../../../public/images/world-cup/final-gold.webp';
 
 export default function FinalCTASection() {
   const reduceMotion = usePrefersReducedMotion();
 
   return (
     <section id="signal" className="final-stage section-shell">
+      <Image src={finalGoldImage} alt="" fill sizes="100vw" className="final-stage__image object-cover" />
       <div className="grain-layer" />
       <motion.div
         className="final-stage__visual"
